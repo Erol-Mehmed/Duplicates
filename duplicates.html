@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="duplicates.css" />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Duplicate characters</title>
+  </head>
+
+  <div id="container">
+    <body>
+      <h1>Find the duplicate characters in your words</h1>
+
+      <h2>
+        Enter words in the below section and see how many times certain
+        characters repeat themselves
+      </h2>
+
+      <h3>You can enter words with spaces between them, but not spaces only</h3>
+
+      <form
+        align="center"
+        id="myForm"
+        onkeydown="return event.key != 'Enter';"
+        onsubmit="event.preventDefault()"
+      >
+        <input type="text" id="string" placeholder="Enter your words!" /><br />
+
+        <button type="submit" id="submit">Submit</button>
+      </form>
+
+      <center>
+        <p
+          id="string2"
+          style="
+            font-size: 1.5rem;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            background-color: rgb(252, 0, 0);
+            width: 15%;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px rgb(0, 0, 0);
+          "
+        ></p>
+
+        <p
+          id="output"
+          style="
+            font-size: 1.5rem;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            background-color: rgb(255, 251, 35);
+            width: 15%;
+            border-radius: 10px;
+            box-shadow: 10px 10px 10px rgb(0, 0, 0);
+            transform: scale(10);
+            animation: pulse 2s infinite;
+          "
+        ></p>
+      </center>
+
+      <script src="duplicates.js"></script>
+    </body>
+  </div>
+</html>
